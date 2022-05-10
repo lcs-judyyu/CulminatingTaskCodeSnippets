@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:README.md">
+   </FileRef>
+   <Group
+      location = "container:"
+      name = "Examples">
+      <Group
+         location = "container:"
+         name = "WebView">
+         <FileRef
+            location = "group:WebViewExample/WebViewExample.xcodeproj">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "container:"
+      name = "SupportingImages">
+      <FileRef
+         location = "group:SupportingImages/webview.png">
+      </FileRef>
+   </Group>
+</Workspace>
