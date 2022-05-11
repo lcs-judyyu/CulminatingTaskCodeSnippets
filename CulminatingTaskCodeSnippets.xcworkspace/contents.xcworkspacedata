@@ -19,6 +19,9 @@
       location = "container:"
       name = "SupportingImages">
       <FileRef
+         location = "group:SupportingImages/symbolic-math.png">
+      </FileRef>
+      <FileRef
          location = "group:SupportingImages/webview.png">
       </FileRef>
    </Group>
