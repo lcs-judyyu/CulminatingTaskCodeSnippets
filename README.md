@@ -6,6 +6,7 @@ These code snippets represent either:
 
 * a technique that goes beyond reasonable expectations for a student in a Grade 11 course
 * a simpler technique that while useful, was not previously shared this year
+* a shorter recap of a technique we have seen earlier this year
 
 ## Sheets
 
@@ -114,3 +115,20 @@ The answer is that LaTeX is a well-established "document preparation system for 
 If you someday write an academic paper of any kind related to science, technology, engineering, or medicine – it is highly likely you will be using LaTeX to typeset your symbolic math.
 
 So, if you want to show equations within your app, you need to learn LaTeX – fortunately, [there are examples available](https://support.apple.com/en-us/HT202501#sample) and it is not too hard to learn the basics. For what it's worth, Apple's office productivity apps – [Pages](https://apps.apple.com/us/app/pages/id409201541?mt=12) (word processor), [Numbers](https://apps.apple.com/ca/app/numbers/id409203825?mt=12) (spreadsheets), and [Keynote](https://apps.apple.com/us/app/keynote/id409183694?mt=12) (presentations) – which are likely pre-installed on your Mac, [also allow you to write equations using LaTeX](https://support.apple.com/en-us/HT202501).
+
+## Favourites 
+
+![A view showing a list of many ice cream flavours. Some flavours have been marked as favourites. These flavours are able to be viewed separately on another tab within the app.](SupportingImages/favourites.png)
+
+How a programmer chooses to handle keeping track of favourite items will vary based on the way their app is organized.
+
+Favourites could be tracked using two lists. This is what the SongBrowser app does. One list is used to store search results obtained from the remote endpoint, and a second list is used to store favourites; you can [review that code here](https://github.com/lcs-rgordon/SongBrowser/blob/027557959bde8da3720d4fc8cfd054268cdc73dc/SongBrowser/Views/SearchView.swift#L17-L22).
+
+Favourites could also be tracked using a single list. Items in the list have a property that controls whether the item is seen as a favourite. One view shows all the items in the list. A second view shows the same list, but filters what is visible to only show favourited items. That is the approach taken with this ice cream-themed Favourites app.
+
+Given that we have only learned *some* of the SwiftUI framework, how to handle the logic when an item is favourited is currently a bit cumbersome, but is [clearly described in the comments of the `FlavourCell` structure](x-source-tag://favourites_list_management).
+
+- Note:
+  In the Grade 12 Computer Science course, you will learn a new technique that makes changing the state (the favourite status) of an item, and having this be properly reflected in the user interface, a lot simpler. 
+
+This app is also a good example of how to *persist* data – something we learned about when completing the DadJokes, Quotes, and FurryFriends apps.
