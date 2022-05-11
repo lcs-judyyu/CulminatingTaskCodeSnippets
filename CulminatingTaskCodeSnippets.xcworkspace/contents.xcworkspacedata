@@ -9,9 +9,9 @@
       name = "Examples">
       <Group
          location = "container:"
-         name = "Notifications">
+         name = "Favourites">
          <FileRef
-            location = "group:LocalNotificationsExample/LocalNotificationsExample.xcodeproj">
+            location = "group:FavouritesExample/FavouritesExample.xcodeproj">
          </FileRef>
       </Group>
       <Group
@@ -28,10 +28,23 @@
             location = "group:WebViewExample/WebViewExample.xcodeproj">
          </FileRef>
       </Group>
+      <Group
+         location = "container:"
+         name = "Notifications">
+         <FileRef
+            location = "group:LocalNotificationsExample/LocalNotificationsExample.xcodeproj">
+         </FileRef>
+      </Group>
    </Group>
    <Group
       location = "container:"
       name = "SupportingImages">
+      <FileRef
+         location = "group:SupportingImages/favourites-searchable.png">
+      </FileRef>
+      <FileRef
+         location = "group:SupportingImages/favourites.png">
+      </FileRef>
       <FileRef
          location = "group:SupportingImages/symbolic-math.png">
       </FileRef>
