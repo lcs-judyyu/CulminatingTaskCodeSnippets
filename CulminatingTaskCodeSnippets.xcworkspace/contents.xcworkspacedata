@@ -9,6 +9,13 @@
       name = "Examples">
       <Group
          location = "container:"
+         name = "Sheets">
+         <FileRef
+            location = "group:SheetsExample/SheetsExample.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "container:"
          name = "WebView">
          <FileRef
             location = "group:WebViewExample/WebViewExample.xcodeproj">
@@ -23,6 +30,9 @@
       </FileRef>
       <FileRef
          location = "group:SupportingImages/webview.png">
+      </FileRef>
+      <FileRef
+         location = "group:SupportingImages/sheets.png">
       </FileRef>
    </Group>
 </Workspace>
