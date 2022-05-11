@@ -122,7 +122,7 @@ So, if you want to show equations within your app, you need to learn LaTeX – f
 
 How a programmer chooses to handle keeping track of favourite items will vary based on the way their app is organized.
 
-Favourites could be tracked using two lists. This is what the SongBrowser app does. One list is used to store search results obtained from the remote endpoint, and a second list is used to store favourites; you can [review that code here](https://github.com/lcs-rgordon/SongBrowser/blob/027557959bde8da3720d4fc8cfd054268cdc73dc/SongBrowser/Views/SearchView.swift#L17-L22).
+Favourites could be tracked using two lists. This is what the *Song Browser* app does. One list is used to store search results obtained from the remote endpoint, and a second list is used to store favourites; you can [review that code here](https://github.com/lcs-rgordon/SongBrowser/blob/027557959bde8da3720d4fc8cfd054268cdc73dc/SongBrowser/Views/SearchView.swift#L17-L22).
 
 Favourites could also be tracked using a single list. Items in the list have a property that controls whether the item is seen as a favourite. One view shows all the items in the list. A second view shows the same list, but filters what is visible to only show favourited items. That is the approach taken with this ice cream-themed Favourites app.
 
@@ -132,3 +132,13 @@ Given that we have only learned *some* of the SwiftUI framework, how to handle t
   In the Grade 12 Computer Science course, you will learn a new technique that makes changing the state (the favourite status) of an item, and having this be properly reflected in the user interface, a lot simpler. 
 
 This app is also a good example of how to *persist* data – something we learned about when completing the DadJokes, Quotes, and FurryFriends apps.
+
+### Favourites - Searchable List
+
+![A view showing a list of many ice cream flavours. The list is searchable; when a search term is entered, the list is filtered based on that term.](SupportingImages/favourites-searchable.png)
+
+In apps like *Song Browser*, we have already seen how the `.searchable` view modifier can be used to present a search field that allows the user to provide song or artist info, and have a list of results returned by the remote endpoint.
+
+However, the `.searchable` view modifier can also be used to search a list of data that you manage locally within your app.
+  
+This is demonstrated in [the following commit that modifies](https://github.com/lcs-rgordon/FavouritesExample/commit/ea117954c8b93953d71d87feee1373d2db3fd231#diff-2c99ffc9f32bd38187cc6da95dc079b94a3f2d2c0dd307c50d009a155c83470a) the *Favourites* app described above.

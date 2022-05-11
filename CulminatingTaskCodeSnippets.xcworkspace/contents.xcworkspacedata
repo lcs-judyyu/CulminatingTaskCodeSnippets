@@ -40,6 +40,9 @@
       location = "container:"
       name = "SupportingImages">
       <FileRef
+         location = "group:SupportingImages/favourites-searchable.png">
+      </FileRef>
+      <FileRef
          location = "group:SupportingImages/favourites.png">
       </FileRef>
       <FileRef
