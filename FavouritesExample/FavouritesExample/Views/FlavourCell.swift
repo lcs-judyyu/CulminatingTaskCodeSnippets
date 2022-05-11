@@ -79,7 +79,7 @@ struct FlavourCell: View {
                     // 4.
                     // Make a new list of the flavours, sorted by name
                     let newSortedListOfFlavours = availableFlavours
-                                                    .sorted{ leftFlavour, rightFlavour in
+                                                    .sorted { leftFlavour, rightFlavour in
                                                         // Alphabetical, by name, ascending
                                                         // e.g.: A is less than B, so A goes first...)
                                                         leftFlavour.name < rightFlavour.name
