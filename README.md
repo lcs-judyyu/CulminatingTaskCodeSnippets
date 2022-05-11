@@ -7,11 +7,11 @@ These code snippets represent either:
 * a technique that goes beyond reasonable expectations for a student in a Grade 11 course
 * a simpler technique that while useful, was not previously shared this year
 
-## WebView
+## Web View
 
 ![A web view is shown loaded as a small portion of a view, about a third of the height of the page. In In a second image a web view is shown where the entire view within the app is given over to showing the web page.](SupportingImages/webview.png)
 
-Several students have made plans to show live web pages within their app. This, as opposed to simply using the `Link` structure in SwiftUI, which simply bumps the user over to the mobile Safari app to view the website.
+Several students have made plans to show live web pages within their app. This, as opposed to simply using the [`Link` structure in SwiftUI](https://developer.apple.com/documentation/swiftui/link), which simply bumps the user over to the mobile Safari app to view the website.
 
 See:
 
