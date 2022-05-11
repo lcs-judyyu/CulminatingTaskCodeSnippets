@@ -9,6 +9,13 @@
       name = "Examples">
       <Group
          location = "container:"
+         name = "Notifications">
+         <FileRef
+            location = "group:LocalNotificationsExample/LocalNotificationsExample.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "container:"
          name = "Sheets">
          <FileRef
             location = "group:SheetsExample/SheetsExample.xcodeproj">
@@ -30,6 +37,9 @@
       </FileRef>
       <FileRef
          location = "group:SupportingImages/webview.png">
+      </FileRef>
+      <FileRef
+         location = "group:SupportingImages/notifications.png">
       </FileRef>
       <FileRef
          location = "group:SupportingImages/sheets.png">

@@ -58,6 +58,35 @@ To use this within your own app, copy the contents of these groups into your own
 
 It is recommended that if these groups do not currently exist within your project, that you create them before copying these files over to your project.
 
+## Notifications
+
+![An interface that allows a user to create a notification that will appear 60 seconds later, or at a specified day and hour of the week. Notifications may recur. A second image shows the notification being delivered.](SupportingImages/notifications.png)
+
+It is useful for an app to be able to reach a user when they may not be using that app. Notifications allow for this. This example delivers notifications whether the app is running in the foreground, or not. 
+
+Notifications can be [scheduled for delivery after a time interval](x-source-tag://notifications_time_interval) (specifed in seconds) or at a [particular date and time](x-source-tag://notifications_date_time); these notifications may be recurring. 
+
+See:
+
+* [`ContentView`](x-source-tag://notifications_publish_notification)
+    * ... and calls to the `publishNotification` functions for examples of how to schedule a notification.
+    
+To use this within your own app, first copy the contents of these groups into your own Xcode project:
+
+* `Delegates`
+    * `AppDelegate.swift`
+* `Helpers`
+    * `SharedConstants.swift`
+    * `SharedFunctions.swift`
+    
+It is recommended that if these groups do not currently exist within your project, that you create them before copying these files over to your project.
+
+As well, note that you must add this line of code:
+
+`@UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate`
+
+... to your [app entry point](x-source-tag://notifications_delegate_adaptor), which in this example, is `LocationNotificationsExampleApp`. This is necessary so that your app can receive notifications even while it is running in the foreground.
+
 ## Symbolic Math 
 
 ![A view showing the mass-energy equivalence equation stated by Albert Einstein, rendered using 'pretty print' symbolic math notation.](SupportingImages/symbolic-math.png)
