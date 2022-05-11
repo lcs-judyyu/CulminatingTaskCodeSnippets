@@ -11,7 +11,6 @@ import SwiftUI
 struct LocalNotificationsExampleApp: App {
     
     // Ensure the AppDelegate class instance is connected to our SwiftUI structure instance for our app
-    /// - Tag: notifications_delegate_adaptor
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     var body: some Scene {

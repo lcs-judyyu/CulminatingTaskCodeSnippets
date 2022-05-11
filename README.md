@@ -64,7 +64,7 @@ It is recommended that if these groups do not currently exist within your projec
 
 It is useful for an app to be able to reach a user when they may not be using that app. Notifications allow for this. This example delivers notifications whether the app is running in the foreground, or not. 
 
-Notifications can be [scheduled for delivery after a time interval](x-source-tag://notifications_time_interval) (specifed in seconds) or at a [particular date and time](x-source-tag://notifications_date_time); these notifications may be recurring. 
+Notifications can be [scheduled for delivery after a time interval](x-source-tag://notifications_time_interval) (specified in seconds), at a [certain date and time during a week](x-source-tag://notifications_date_time) – with the ability to mark the notification as recurring, or for any [single future date and time](x-source-tag://notifications_single_date_time). 
 
 See:
 
